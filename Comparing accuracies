@@ -1,0 +1,8 @@
+#Comparision:
+print("MODELS\t\t\tACCURACY\t\tF1-SCORE")
+print("____________________________________________________________")
+print("LOGISTIC REGRESSION ", Accuracy_LR," ",F1_Score_LR)
+print("____________________________________________________________")
+print("Naive Baysian\t    ", Accuracy_BAYES," ",F1_Score_BAYES)
+print("____________________________________________________________")
+print("SVM\t\t    ", Accuracy_SVM," ",F1_Score_SVM)
