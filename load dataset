@@ -1,0 +1,11 @@
+file = "F:\PROJECT DSF\Fake_new_detction\glove.6B.50d.txt"
+glove2word2vec(glove_input_file=file, word2vec_output_file="gensim_glove_vectors.txt")
+ 
+###Finally, read the word2vec txt to a gensim model using KeyedVectors:
+ 
+glove_model = KeyedVectors.load_word2vec_format("gensim_glove_vectors.txt", binary=False)
+
+data_fake = pd.read_csv('F:\PROJECT DSF\Fake_new_detction\politifact_fake.csv')
+data_real = pd.read_csv('F:\PROJECT DSF\Fake_new_detction\politifact_real.csv')
+data_fake.head()
+data_real.head()
